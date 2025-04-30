@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushmitha | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      scroll-behavior: smooth;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 4rem 1rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      padding: 1rem;
+    }
+
+    nav .nav-link.active {
+      color: #00ffff !important;
+      border-bottom: 2px solid #00ffff;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Sushmitha S</h1>
+      <p>Software Developer | Creative Mind | Tech Enthusiast</p>
+    </header>
+
+    <nav class="nav justify-content-center">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#certificates">Certificates</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="Passport size photo.jpg" alt="Sushmitha" class="profile-pic" /> 
+        <p>Hello! I'm <strong>Sushmitha</strong> an enthusiastic entry-level software developer from Chennai with a strong passion for technology and innovation. I enjoy exploring new programming languages and have hands-on experience with web development, Java, Python, and emerging fields like machine learning and IoT. As a motivated team player with leadership qualities, I’m always eager to contribute to meaningful projects and grow through collaboration. I value punctuality and precision in my work and continuously seek opportunities to enhance my skills. Outside of tech, I enjoy watching movies and traveling to new places.</p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.Tech</strong> – Rajalakshmi Engineering College (7.9 CGPA)</li>
+          <li><strong>HSC</strong> – Pon Vidyashram CBSE School (81%)</li>
+          <li><strong>SSLC</strong> – Padma Seshadri Bala Bhavan Senior Secondary School (78%)</li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="row">
+          <div class="col-md-3"><div class="card p-3">💻 Java, Python</div></div>
+          <div class="col-md-3"><div class="card p-3">🌐 HTML, CSS, JS</div></div>
+          <div class="col-md-3"><div class="card p-3">📊 Excel, MS Office</div></div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="card p-3 my-2">River Water Quality Prediction (ML)</div>
+        <div class="card p-3 my-2">Women Safety IoT Device</div>
+        <div class="card p-3 my-2">Loan Approval Prediction</div>
+        <div class="card p-3 my-2">Sketch Bot using UiPath</div>
+      </section>
+
+      <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card p-3 text-center">
+              <img src="https://via.placeholder.com/300x200?text=AWS" class="img-fluid mb-2" />
+              <h5>AWS Cloud Practitioner</h5>
+              <p>Amazon Web Services</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 text-center">
+              <img src="https://via.placeholder.com/300x200?text=RPA" class="img-fluid mb-2" />
+              <h5>Intro to RPA</h5>
+              <p>UiPath Academy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sushmii793@gmail.com" class="text-white">sushmii793@gmail.com</a></p>
+        <p>Phone: 9677129108</p>
+        <p>Chennai, Tamil Nadu</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sushmitha S</p>
+    </footer>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          navLinks.forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+          });
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
